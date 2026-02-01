@@ -88,12 +88,6 @@ module automatic_washing_machine_tb;
     // Clock generation (10ns period)
     always #5 clk = ~clk;
  
-           initial begin
-    $dumpfile("dump.vcd");
-    $dumpvars(0, automatic_washing_machine_tb);
-end
-
-
     initial begin
         // Initial values
         clk = 0;
